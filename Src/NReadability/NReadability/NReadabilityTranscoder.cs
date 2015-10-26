@@ -78,7 +78,7 @@ namespace NReadability
     private const int _ParagraphSegmentLength = 100;
     private const int _MaxPointsForSegmentsCount = 3;
     private const int _MinSiblingParagraphLength = 80;
-    private const int _MinCommaSegments = 10;
+    private const int _MinCommaSegments = 1;
     private const int _LisCountTreshold = 100;
     private const int _MaxImagesInShortSegmentsCount = 2;
     private const int _MinInnerTextLengthInElementsWithEmbed = 75;
