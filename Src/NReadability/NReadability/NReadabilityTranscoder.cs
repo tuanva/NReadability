@@ -1466,7 +1466,7 @@ namespace NReadability
           float linksDensity = GetLinksDensity(element);
           int innerTextLength = elementInnerText.Length;
           string elementNameLower = elementName.Trim().ToLower();
-          bool remove = (imgsCount > psCount)
+          bool remove = (imgsCount > psCount && imgsCount != 1) // keeps the element if it contains at least an image
                      || (lisCount - _LisCountTreshold > psCount && elementNameLower != "ul" && elementNameLower != "ol")
                      || (inputsCount > psCount / 3)
                      || (innerTextLength < _MinInnerTextLength && (imgsCount == 0 || imgsCount > _MaxImagesInShortSegmentsCount))
