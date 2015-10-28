@@ -46,8 +46,8 @@ namespace NReadability
       {
         throw new ArgumentNullException("htmlContent");
       }
-
-      if (htmlContent.Trim().Length == 0)
+        // \t\t\t returns length = 1
+      if (htmlContent.Trim().Length <= 1)
       {
         return new XDocument();
       }
